@@ -7,9 +7,9 @@ channel_targets:
 docker_image:
 - condaforge/linux-anvil-comp7
 c_compiler:
-- toolchain_c
+- gcc
 cxx_compiler:
-- toolchain_cxx
+- gxx
 pin_run_as_build:
   pyqt:
     max_pin: x.x
