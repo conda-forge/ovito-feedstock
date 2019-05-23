@@ -11,4 +11,3 @@ muParser-devel
 boost-devel
 netcdf-devel
 hdf5-devel
-botan-devel
