@@ -37,6 +37,7 @@ requirements:
     - qt
     - libgcc-ng
     - zlib
+    - libssh2
   host:
     - xorg-libxfixes  # [linux]
     - python
@@ -61,6 +62,7 @@ requirements:
     - qt
     - libgcc-ng
     - zlib
+    - libssh2
 
 test:
   imports:
