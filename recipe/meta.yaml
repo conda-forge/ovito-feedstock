@@ -25,7 +25,7 @@ requirements:
     - fftw 
     - libglu
     - git
-    - boost =1.58
+    - boost =1.68
     - libstdcxx-ng
     - qt
     - libgcc-ng
@@ -50,7 +50,7 @@ requirements:
     - qscintilla2
     - fftw
     - libglu
-    - boost =1.58
+    - boost =1.68
     - libstdcxx-ng
     - qt
     - libgcc-ng
