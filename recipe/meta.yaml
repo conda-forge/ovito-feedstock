@@ -30,6 +30,7 @@ requirements:
     - qt
     - libgcc-ng
     - zlib
+    - hdf5
   host:
     - python
     - pip
@@ -53,6 +54,7 @@ requirements:
     - qt
     - libgcc-ng
     - zlib
+    - hdf5
 
 test:
   imports:
