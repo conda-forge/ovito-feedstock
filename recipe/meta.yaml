@@ -20,14 +20,14 @@ requirements:
     - {{ compiler('c') }}
     - qscintilla2
     - sphinx
-    - cmake =3.11
+    - cmake
     - make 
     - fftw 
     - libglu
     - git
     - boost
     - libstdcxx-ng
-    - qt =5.6.0
+    - qt
     - libgcc-ng
     - zlib
   host:
@@ -35,22 +35,22 @@ requirements:
     - pip
     - numpy 
     - sip 
-    - pyqt =5.6.0
+    - pyqt
     - matplotlib
     - ase
   run:
     - python
     - numpy 
     - sip 
-    - pyqt =5.6.0
+    - pyqt 
     - matplotlib
     - ase
     - qscintilla2
     - fftw
     - libglu
-    - boost =1.57.0
+    - boost
     - libstdcxx-ng
-    - qt =5.6.0
+    - qt
     - libgcc-ng
     - zlib
 
