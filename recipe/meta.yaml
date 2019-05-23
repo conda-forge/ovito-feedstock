@@ -1,13 +1,15 @@
 {% set name = "ovito" %}
 {% set version = "2.9.0" %}
-{% set sha256 = "f0fc561d0e995002c48bee6dc5f7e95c69dd52615a735a1707664a7a5f0e19c4" %}
+# {% set sha256 = "f0fc561d0e995002c48bee6dc5f7e95c69dd52615a735a1707664a7a5f0e19c4" %}
+{% set sha256 = "c6fe3cecb2ed08ead96606eeea1818c0c98468f665ab57363538ab225e603247" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/stuko/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
+  # url: https://gitlab.com/stuko/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
+  url: https://gitlab.com/stuko/ovito/-/archive/master/ovito-master.tar.gz
   sha256: {{ sha256 }}
 
 build:
