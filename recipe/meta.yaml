@@ -27,7 +27,7 @@ requirements:
     - git
     - boost =1.57.0
     - libstdcxx-ng =5.4.0
-    - qt
+    - qt =5.6.0
     - libgcc-ng =5.4.0
     - zlib
   host:
@@ -50,7 +50,7 @@ requirements:
     - libglu
     - boost =1.57.0
     - libstdcxx-ng =5.4.0
-    - qt
+    - qt =5.6.0
     - libgcc-ng =5.4.0
     - zlib
 
