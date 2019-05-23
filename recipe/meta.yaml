@@ -26,9 +26,9 @@ requirements:
     - libglu
     - git
     - boost =1.57.0
-    - libstdcxx-ng =5.4.0
+    - libstdcxx-ng
     - qt =5.6.0
-    - libgcc-ng =5.4.0
+    - libgcc-ng
     - zlib
   host:
     - python
@@ -49,9 +49,9 @@ requirements:
     - fftw
     - libglu
     - boost =1.57.0
-    - libstdcxx-ng =5.4.0
+    - libstdcxx-ng
     - qt =5.6.0
-    - libgcc-ng =5.4.0
+    - libgcc-ng
     - zlib
 
 test:
