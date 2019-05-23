@@ -31,6 +31,7 @@ requirements:
     - libgcc-ng
     - zlib
     - hdf5
+    - libnetcdf
   host:
     - python
     - pip
@@ -55,6 +56,7 @@ requirements:
     - libgcc-ng
     - zlib
     - hdf5
+    - libnetcdf
 
 test:
   imports:
