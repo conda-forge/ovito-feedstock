@@ -20,7 +20,7 @@ requirements:
     - {{ compiler('c') }}
     - qscintilla2
     - sphinx
-    - cmake
+    - cmake =3.11
     - make 
     - fftw 
     - libglu

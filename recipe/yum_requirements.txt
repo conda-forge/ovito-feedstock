@@ -10,4 +10,4 @@ muParser-devel
 boost-devel
 netcdf-devel
 hdf5-devel
-libssh-devel
+botan-devel
