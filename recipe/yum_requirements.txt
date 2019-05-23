@@ -7,3 +7,4 @@ libXxf86vm
 qt5-qtbase-devel
 qt5-qtsvg-devel
 qt5-qttools-devel
+libssh-devel
