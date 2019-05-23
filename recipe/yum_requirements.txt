@@ -1,0 +1,13 @@
+mesa-libGL
+mesa-dri-drivers
+libselinux
+libXdamage
+libXxf86vm
+qt5-qtbase-devel
+qt5-qtsvg-devel
+qt5-qttools-devel
+muParser-devel
+boost-devel
+netcdf-devel
+hdf5-devel
+libssh-devel

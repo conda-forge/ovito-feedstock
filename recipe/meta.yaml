@@ -26,32 +26,32 @@ requirements:
     - libglu
     - git
     - boost =1.57.0
-    - libstdcxx-ng
+    - libstdcxx-ng =7.2.0
     - qt
-    - libgcc-ng
+    - libgcc-ng =7.2.0
     - zlib
   host:
     - python
     - pip
     - numpy 
     - sip 
-    - pyqt
+    - pyqt =5.6.0
     - matplotlib
     - ase
   run:
     - python
     - numpy 
     - sip 
-    - pyqt
+    - pyqt =5.6.0
     - matplotlib
     - ase
     - qscintilla2
     - fftw
     - libglu
     - boost =1.57.0
-    - libstdcxx-ng
+    - libstdcxx-ng =7.2.0
     - qt
-    - libgcc-ng
+    - libgcc-ng =7.2.0
     - zlib
 
 test:
