@@ -25,11 +25,11 @@ requirements:
     - fftw 
     - libglu
     - git
-    - boost
+    - boost =1.58
     - libstdcxx-ng
     - qt
     - libgcc-ng
-    - zlib
+    - zlib =1.2.8
     - hdf5
     - libnetcdf
   host:
@@ -50,11 +50,11 @@ requirements:
     - qscintilla2
     - fftw
     - libglu
-    - boost
+    - boost =1.58
     - libstdcxx-ng
     - qt
     - libgcc-ng
-    - zlib
+    - zlib =1.2.8
     - hdf5
     - libnetcdf
 
