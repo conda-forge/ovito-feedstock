@@ -1,0 +1,15 @@
+Index: src/core/Core.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/core/Core.h	(date 1501174365000)
++++ src/core/Core.h	(date 1558780815000)
+@@ -50,6 +50,7 @@
+ #include <atomic>
+ #include <tuple>
+ #include <numeric>
++#include <functional>
+ 
+ /******************************************************************************
+ * QT Library
