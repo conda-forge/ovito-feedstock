@@ -35,7 +35,7 @@ else
 	      -DPYTHON_LIBRARY=${PREFIX}/lib/libpython${PY_VER}.so \
 	      ..
 fi;
-make 
+make VERBOSE=1
 cp lib/ovito/*.so ${PREFIX}/lib
 cp -r lib/ovito/plugins/python/ovito ${SP_DIR}
 mkdir -p ${PREFIX}/lib/ovito/plugins
