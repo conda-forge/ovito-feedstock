@@ -1,5 +1,8 @@
 #!/bin/bash
 
+ls /usr/include/libssh
+ls /usr/include/
+
 args="-DOVITO_BUILD_DOCUMENTATION=OFF \
       -DCMAKE_BUILD_TYPE=Release \
       -DLIBSSH_INCLUDE_DIR=/usr/include/libssh \
