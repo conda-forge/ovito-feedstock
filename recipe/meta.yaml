@@ -10,7 +10,7 @@ source:
   url: https://gitlab.com/stuko/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-  - Patch_core_include_functional.patch
+  - gcc_7_2.patch
 
 build:
   number: 0
