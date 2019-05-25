@@ -15,6 +15,11 @@ args="-DOVITO_BUILD_PLUGIN_MESH=ON \
       -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_INSTALL_PREFIX=${PREFIX}" 
 
+echo 'ls /usr/include/'
+ls /usr/include/
+echo 'ls /usr/include/GL'
+ls /usr/include/GL
+
 mkdir build
 cd build
 if [ ${PY3K} = 1 ]; then 
