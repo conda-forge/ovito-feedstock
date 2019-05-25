@@ -1,11 +1,13 @@
 #!/bin/bash
 
+echo 'ls /usr/include/libssh'
 ls /usr/include/libssh
+echo 'ls /usr/include'
 ls /usr/include/
 
 args="-DOVITO_BUILD_DOCUMENTATION=OFF \
       -DCMAKE_BUILD_TYPE=Release \
-      -DLIBSSH_INCLUDE_DIR=/usr/include/libssh \
+      -DLIBSSH_INCLUDE_DIR=/usr/include \
       -DCMAKE_INSTALL_PREFIX=${PREFIX}" 
 
 mkdir build
