@@ -20,6 +20,11 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
+    - {{ cdt('mesa-libgl-devel') }}  # [linux]
+    - {{ cdt('mesa-dri-drivers') }}  # [linux]
+    - {{ cdt('libselinux') }}  # [linux]
+    - {{ cdt('libxdamage') }}  # [linux]
+    - {{ cdt('libxxf86vm') }}  # [linux]
     - qscintilla2
     - sphinx
     - cmake =3.11
@@ -33,6 +38,7 @@ requirements:
     - libgcc-ng 
     - zlib
   host:
+    - xorg-libxfixes  # [linux]
     - python
     - pip
     - numpy 
