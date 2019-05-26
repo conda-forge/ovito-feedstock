@@ -31,7 +31,7 @@ run_conda_forge_build_setup
 # run "conda smithy rerender" and this line will be updated
 # automatically.
 /usr/bin/sudo -n yum install -y epel-release
-/usr/bin/sudo -n yum install -y mesa-libGL mesa-libGL-devel mesa-dri-drivers libselinux libXdamage libXxf86vm libssh-devel
+/usr/bin/sudo -n yum install -y mesa-libGL mesa-libGL-devel mesa-dri-drivers libselinux libXdamage libXxf86vm libssh-devel libssh
 
 
 # make the build number clobber
