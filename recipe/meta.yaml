@@ -32,7 +32,7 @@ requirements:
     - fftw 
     - libglu
     - git
-    - boost #=1.57.0
+    - boost =1.57.0
     - libstdcxx-ng 
     - qt #=5.6.0
     - libgcc-ng 
@@ -56,7 +56,7 @@ requirements:
     - qscintilla2
     - fftw
     - libglu
-    - boost #=1.57.0
+    - boost =1.57.0
     - libstdcxx-ng
     - qt #=5.6.0
     - libgcc-ng
