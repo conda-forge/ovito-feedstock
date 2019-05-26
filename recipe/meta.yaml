@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 3
   skip: True  # [not linux]
 
 requirements:
@@ -24,46 +24,26 @@ requirements:
     - {{ cdt('libselinux') }}  # [linux]
     - {{ cdt('libxdamage') }}  # [linux]
     - {{ cdt('libxxf86vm') }}  # [linux]
-    - qscintilla2
     - sphinx
     - cmake
     - make
-    - fftw
-    - libglu
     - git
-    - boost =1.57.0
-    - libstdcxx-ng
-    - qt
-    - libgcc-ng
-    - zlib
-    - hdf5
-    - libnetcdf
   host:
     - xorg-libxfixes  # [linux]
+    - qt
     - python
-    - pip
     - numpy
-    - sip
     - pyqt
-    - matplotlib
-    - ase
+    - qscintilla2
+    - boost =1.57.0
+    - zlib
+    - fftw
     - hdf5
     - libnetcdf
   run:
     - python
-    - numpy
-    - sip
-    - pyqt
     - matplotlib
     - ase
-    - qscintilla2
-    - fftw
-    - libglu
-    - boost =1.57.0
-    - libstdcxx-ng
-    - qt
-    - libgcc-ng
-    - zlib
 
 test:
   imports:
