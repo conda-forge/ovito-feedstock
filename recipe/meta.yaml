@@ -36,6 +36,7 @@ requirements:
     - qt
     - libgcc-ng
     - zlib
+    - hdf5
   host:
     - xorg-libxfixes  # [linux]
     - python
@@ -45,6 +46,7 @@ requirements:
     - pyqt
     - matplotlib
     - ase
+    - hdf5
   run:
     - python
     - numpy
