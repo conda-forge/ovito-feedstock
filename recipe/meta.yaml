@@ -1,19 +1,18 @@
 {% set name = "ovito" %}
-{% set version = "2.9.0" %}
-{% set sha256 = "f0fc561d0e995002c48bee6dc5f7e95c69dd52615a735a1707664a7a5f0e19c4" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "a619bf42bc0d290b3be277acbf7c14bcc75f0bd6a7f92c320b4f18a22f3fee4c" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/stuko/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
+  # url: https://gitlab.com/stuko/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
+  url: https://gitlab.com/stuko/ovito/-/archive/master/ovito-master.tar.gz
   sha256: {{ sha256 }}
-  patches:
-  - gcc_7_2.patch
 
 build:
-  number: 1
+  number: 0
   skip: True  # [not linux]
 
 requirements:
@@ -25,42 +24,27 @@ requirements:
     - {{ cdt('libselinux') }}  # [linux]
     - {{ cdt('libxdamage') }}  # [linux]
     - {{ cdt('libxxf86vm') }}  # [linux]
-    - qscintilla2
     - sphinx
     - cmake
     - make
-    - fftw
-    - libglu
     - git
-    - boost =1.57.0
-    - libstdcxx-ng
-    - qt
-    - libgcc-ng
-    - zlib
   host:
     - xorg-libxfixes  # [linux]
+    - qt
     - python
-    - pip
     - numpy
-    - sip
     - pyqt
-    - matplotlib
-    - ase
+    - qscintilla2
+    - boost =1.57.0
+    - zlib
+    - fftw
+    - hdf5
+    - libnetcdf
+    - libssh
   run:
     - python
-    - numpy
-    - sip
-    - pyqt
     - matplotlib
     - ase
-    - qscintilla2
-    - fftw
-    - libglu
-    - boost =1.57.0
-    - libstdcxx-ng
-    - qt
-    - libgcc-ng
-    - zlib
 
 test:
   imports:
