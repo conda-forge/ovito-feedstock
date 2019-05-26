@@ -27,14 +27,14 @@ requirements:
     - {{ cdt('libxxf86vm') }}  # [linux]
     - qscintilla2
     - sphinx
-    - cmake =3.11
+    - cmake #=3.11
     - make 
     - fftw 
     - libglu
     - git
-    - boost =1.57.0
+    - boost #=1.57.0
     - libstdcxx-ng 
-    - qt =5.6.0
+    - qt #=5.6.0
     - libgcc-ng 
     - zlib
   host:
@@ -43,22 +43,22 @@ requirements:
     - pip
     - numpy 
     - sip 
-    - pyqt =5.6.0
+    - pyqt #=5.6.0
     - matplotlib
     - ase
   run:
     - python
     - numpy 
     - sip 
-    - pyqt =5.6.0
+    - pyqt #=5.6.0
     - matplotlib
     - ase
     - qscintilla2
     - fftw
     - libglu
-    - boost =1.57.0
+    - boost #=1.57.0
     - libstdcxx-ng
-    - qt =5.6.0
+    - qt #=5.6.0
     - libgcc-ng
     - zlib
 
