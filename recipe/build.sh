@@ -2,8 +2,8 @@
 
 args="-DOVITO_BUILD_DOCUMENTATION=OFF \
       -DCMAKE_BUILD_TYPE=Release \
-      -DLIBSSH_LIBRARY=${PREFIX}/lib \
-      -DLIBSSH_INCLUDE_DIR=${PREFIX}/include \
+      -DLIBSSH_LIBRARY=${PREFIX}/lib/libssh.so \
+      -DLIBSSH_INCLUDE_DIR=${PREFIX}/include/libssh \
       -DCMAKE_INSTALL_PREFIX=${PREFIX}" 
 
 mkdir build
