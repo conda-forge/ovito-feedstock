@@ -41,6 +41,7 @@ requirements:
     - hdf5
     - libnetcdf
     - libssh
+    - xorg-libxext
   run:
     - python
     - matplotlib
