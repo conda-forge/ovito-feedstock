@@ -5,9 +5,9 @@ ls /usr/include/libssh
 echo 'ls /usr/include'
 ls /usr/include/
 cp -r /usr/include/libssh ${PREFIX}/include
-echo 'ls /usr/lib/libssh*'
-ls /usr/lib/libssh*
-cp -r /usr/lib/libssh* ${PREFIX}/lib
+echo 'ls /usr/lib64/libssh*'
+ls /usr/lib64/libssh*
+cp -r /usr/lib64/libssh* ${PREFIX}/lib
 
 args="-DOVITO_BUILD_DOCUMENTATION=OFF \
       -DCMAKE_BUILD_TYPE=Release \
