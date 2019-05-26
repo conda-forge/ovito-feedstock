@@ -7,11 +7,11 @@ ls /usr/include/
 cp -r /usr/include/libssh ${PREFIX}/include
 echo 'ls /usr/lib64/libssh*'
 ls /usr/lib64/libssh*
-cp /usr/lib64/libssh* ${PREFIX}/lib64
+cp /usr/lib64/libssh* ${PREFIX}/lib
 
 args="-DOVITO_BUILD_DOCUMENTATION=OFF \
       -DCMAKE_BUILD_TYPE=Release \
-      -DLIBSSH_LIBRARY=${PREFIX}/lib64 \
+      -DLIBSSH_LIBRARY=${PREFIX}/lib \
       -DLIBSSH_INCLUDE_DIR=${PREFIX}/include \
       -DCMAKE_INSTALL_PREFIX=${PREFIX}" 
 
@@ -37,5 +37,5 @@ mkdir -p ${PREFIX}/lib/ovito/plugins
 cp lib/ovito/plugins/*.so ${PREFIX}/lib/ovito/plugins
 sed -i 's\/../../..\/../../../../ovito/plugins\g' ${SP_DIR}/ovito/plugins/__init__.py
 
-rm -rf ${PREFIX}/include/libssh
-rm -rf ${PREFIX}/lib64/libssh* 
+rm -r ${PREFIX}/include/libssh
+rm ${PREFIX}/lib/libssh* 
