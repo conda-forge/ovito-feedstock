@@ -15,11 +15,11 @@ args="-DOVITO_BUILD_PLUGIN_MESH=ON \
       -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_INSTALL_PREFIX=${PREFIX}" 
 
-echo 'ls /usr/include/'
-ls /usr/include/
-echo 'ls /usr/include/GL'
-ls /usr/include/GL
-cp -r /usr/include/GL ${PREFIX}/include
+# echo 'ls /usr/include/'
+# ls /usr/include/
+# echo 'ls /usr/include/GL'
+# ls /usr/include/GL
+# cp -r /usr/include/GL ${PREFIX}/include
 
 mkdir build
 cd build
@@ -36,11 +36,11 @@ else
 	      -DPYTHON_LIBRARY=${PREFIX}/lib/libpython${PY_VER}.so \
 	      ..
 fi;
-make VERBOSE=1
+make # VERBOSE=1
 cp lib/ovito/*.so ${PREFIX}/lib
 cp -r lib/ovito/plugins/python/ovito ${SP_DIR}
 mkdir -p ${PREFIX}/lib/ovito/plugins
 cp lib/ovito/plugins/*.so ${PREFIX}/lib/ovito/plugins
 sed -i 's\/../../..\/../../../../ovito/plugins\g' ${SP_DIR}/ovito/plugins/__init__.py
 
-rm -rf ${PREFIX}/include/GL
+# rm -rf ${PREFIX}/include/GL
