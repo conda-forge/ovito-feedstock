@@ -4,6 +4,7 @@ echo 'ls /usr/include/libssh'
 ls /usr/include/libssh
 echo 'ls /usr/include'
 ls /usr/include/
+cp -r /usr/include/libssh ${PREFIX}/include
 
 args="-DOVITO_BUILD_DOCUMENTATION=OFF \
       -DCMAKE_BUILD_TYPE=Release \
@@ -31,3 +32,5 @@ cp -r lib/ovito/plugins/python/ovito ${SP_DIR}
 mkdir -p ${PREFIX}/lib/ovito/plugins
 cp lib/ovito/plugins/*.so ${PREFIX}/lib/ovito/plugins
 sed -i 's\/../../..\/../../../../ovito/plugins\g' ${SP_DIR}/ovito/plugins/__init__.py
+
+rm -rf ${PREFIX}/include/libssh
