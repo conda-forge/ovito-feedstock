@@ -37,6 +37,7 @@ requirements:
     - libgcc-ng
     - zlib
     - hdf5
+    - libnetcdf
   host:
     - xorg-libxfixes  # [linux]
     - python
@@ -47,6 +48,7 @@ requirements:
     - matplotlib
     - ase
     - hdf5
+    - libnetcdf
   run:
     - python
     - numpy
