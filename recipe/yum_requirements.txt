@@ -5,3 +5,4 @@ libselinux
 libXdamage 
 libXxf86vm 
 libssh-devel
+libssh
