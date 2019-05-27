@@ -1,3 +1,5 @@
+boost:
+- 1.68.0
 c_compiler:
 - gcc
 c_compiler_version:
@@ -12,9 +14,17 @@ cxx_compiler_version:
 - '7'
 docker_image:
 - condaforge/linux-anvil-comp7
+hdf5:
+- 1.10.4
+libnetcdf:
+- 4.6.2
 numpy:
 - '1.14'
 pin_run_as_build:
+  boost:
+    max_pin: x.x.x
+  libnetcdf:
+    max_pin: x.x.x
   pyqt:
     max_pin: x.x
   python:
