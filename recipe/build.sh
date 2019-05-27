@@ -23,6 +23,11 @@ else
 fi;
 
 make 
+
+echo 'ovito build directory list - begin'
+find .
+echo 'ovito build directory list - end'
+
 cp lib/ovito/*${SHLIB_EXT} ${PREFIX}/lib
 cp -r lib/ovito/plugins/python/ovito ${SP_DIR}
 mkdir -p ${PREFIX}/lib/ovito/plugins
