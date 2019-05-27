@@ -46,6 +46,7 @@ requirements:
     - python
     - matplotlib
     - ase
+    - libssh
 
 test:
   imports:
