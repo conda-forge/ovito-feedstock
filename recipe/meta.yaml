@@ -13,7 +13,7 @@ source:
   - gcc_7_2.patch
 
 build:
-  number: 5
+  number: 6
   skip: True  # [not linux]
 
 requirements:
@@ -41,7 +41,7 @@ requirements:
     - fftw
   run:
     - python
-    - matplotlib
+    - matplotlib-base
     - ase
 
 test:
