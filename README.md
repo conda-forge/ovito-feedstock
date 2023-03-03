@@ -1,11 +1,11 @@
-About ovito
-===========
+About ovito-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ovito-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.ovito.org
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ovito-feedstock/blob/main/LICENSE.txt)
 
 Summary: Scientific visualization and analysis software for atomistic simulation data
 
