@@ -26,7 +26,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/ovito-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/ovito-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -51,6 +58,34 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3178&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ovito-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_ffmpeg6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_ffmpeg5</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3178&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ovito-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_ffmpeg5" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_ffmpeg6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3178&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ovito-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_ffmpeg6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_ffmpeg5</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3178&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ovito-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_ffmpeg5" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_ffmpeg6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3178&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ovito-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_ffmpeg6" alt="variant">
                 </a>
               </td>
             </tr><tr>
