@@ -9,12 +9,12 @@ package:
 source:
   - url: https://gitlab.com/stuko/{{ name }}/-/archive/v{{ version }}/{{ name }}-v{{ version }}.tar.gz
     sha256: {{ sha256 }}
-  - url: https://github.com/facebook/zstd/releases/download/v1.5.6/zstd-1.5.6.tar.gz
-    sha256: 8c29e06cf42aacc1eafc4077ae2ec6c6fcb96a626157e0593d5e82a34fd403c1
+  - url: https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz
+    sha256: eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3
     folder: src/3rdparty/zstd
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -42,7 +42,7 @@ requirements:
     - qt6-main
     - zlib
     - zstd
-    - libssh   # [not win]
+    - libssh
   run_constrained:
     - menuinst >=1.4.17  # [win]
 
