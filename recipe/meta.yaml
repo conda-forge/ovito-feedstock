@@ -14,7 +14,7 @@ source:
     folder: src/3rdparty/zstd
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
