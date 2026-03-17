@@ -14,22 +14,13 @@ source:
     folder: src/3rdparty/zstd
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - {{ cdt('libselinux') }}  # [linux]
-    - {{ cdt('libxcb') }}  # [linux]
-    - {{ cdt('libxdamage') }}  # [linux]
-    - {{ cdt('libxfixes') }}  # [linux]
-    - {{ cdt('libxext-devel') }}  # [linux]
-    - {{ cdt('libxxf86vm') }}  # [linux]
-    - {{ cdt('libXau') }}  # [linux]
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - cmake
     - make  # [unix]
     - sphinx
@@ -43,6 +34,8 @@ requirements:
     - zlib
     - zstd
     - libssh
+    - xorg-libxext                # [linux]
+    - libgl-devel                    # [linux]
   run_constrained:
     - menuinst >=1.4.17  # [win]
 
