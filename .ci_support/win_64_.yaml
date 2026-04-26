@@ -11,7 +11,7 @@ cxx_compiler:
 ffmpeg:
 - '8'
 libboost_headers:
-- '1.88'
+- '1.90'
 libnetcdf:
 - 4.10.0
 libssh:
