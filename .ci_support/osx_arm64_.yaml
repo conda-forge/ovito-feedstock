@@ -23,7 +23,7 @@ ffmpeg:
 libboost_headers:
 - '1.90'
 libnetcdf:
-- 4.10.0
+- 4.10.1
 libssh:
 - '0.12'
 macos_machine:
