@@ -1,6 +1,6 @@
 {% set name = "ovito" %}
-{% set version = "3.15.5" %}
-{% set sha256 = "1cdb034d49f7c3dbb69ecba8917cd108d35c0c9ad9cd1da022fb3ade62e61968" %}
+{% set version = "3.16.0" %}
+{% set sha256 = "663d0ff34d2c5679d8b293bedeb12cf3c72f5c679561ba81ffceb0531e103003" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     folder: src/3rdparty/zstd
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
