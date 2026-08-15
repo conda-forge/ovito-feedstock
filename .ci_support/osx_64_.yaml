@@ -5,7 +5,7 @@ MACOSX_SDK_VERSION:
 c_compiler:
 - clang
 c_compiler_version:
-- '19'
+- '21'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -17,9 +17,9 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '19'
+- '21'
 ffmpeg:
-- '8'
+- '9'
 libboost_headers:
 - '1.90'
 libnetcdf:
@@ -29,7 +29,7 @@ libssh:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 qt6_main:
-- '6.11'
+- '6'
 target_platform:
 - osx-64
 zip_keys:
