@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 ffmpeg:
-- '8'
+- '9'
 libboost_headers:
 - '1.90'
 libnetcdf:
@@ -17,7 +17,7 @@ libnetcdf:
 libssh:
 - '0.12'
 qt6_main:
-- '6.11'
+- '6'
 target_platform:
 - win-64
 zlib:
