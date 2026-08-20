@@ -10,10 +10,14 @@ cxx_compiler:
 - vs2022
 ffmpeg:
 - '9'
+hdf5:
+- '2'
 libboost_headers:
 - '1.90'
 libnetcdf:
 - 4.10.1
+libsqlite:
+- '3'
 libssh:
 - '0.12'
 qt6_main:

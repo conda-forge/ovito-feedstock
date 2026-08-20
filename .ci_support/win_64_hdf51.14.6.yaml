@@ -1,0 +1,30 @@
+c_compiler:
+- vs2022
+c_stdlib:
+- vs
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2022
+ffmpeg:
+- '9'
+hdf5:
+- 1.14.6
+libboost_headers:
+- '1.90'
+libnetcdf:
+- 4.10.1
+libsqlite:
+- '3'
+libssh:
+- '0.12'
+qt6_main:
+- '6'
+target_platform:
+- win-64
+zlib:
+- '1'
+zstd:
+- '1.5'
