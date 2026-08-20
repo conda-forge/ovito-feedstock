@@ -42,7 +42,10 @@ requirements:
     # present at *application* build time: QVulkanInstance and QRhiVulkanInitParams are declared
     # only under "#if QT_CONFIG(vulkan) && __has_include(<vulkan/vulkan.h>)". Without this
     # build-time-only package, our QT_CONFIG(vulkan) code paths fail to compile.
-    - libvulkan-headers  # [linux]
+    # This applies to macOS too, where qt6-main enables Vulkan via MoltenVK, even though OVITO
+    # selects the Metal backend there at runtime. Windows is unaffected: our Vulkan code paths
+    # are guarded by !defined(Q_OS_WIN).
+    - libvulkan-headers  # [not win]
 
     # SLI file format reader of OVITO uses SQLite:
     - libsqlite
