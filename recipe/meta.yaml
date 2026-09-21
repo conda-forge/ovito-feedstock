@@ -1,6 +1,6 @@
 {% set name = "ovito" %}
-{% set version = "3.16.0" %}
-{% set sha256 = "663d0ff34d2c5679d8b293bedeb12cf3c72f5c679561ba81ffceb0531e103003" %}
+{% set version = "3.16.1" %}
+{% set sha256 = "772a420c5e8ec98d3879da2325f98b43db3e3eccc67c3bcaa751bfbdadb9b810" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     folder: src/3rdparty/zstd
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -36,7 +36,6 @@ requirements:
     - libssh
     - xorg-libxext  # [linux]
     - libgl-devel  # [linux]
-    
     # conda-forge's qt6-main is built with Vulkan support (QT_FEATURE_vulkan=1) and depends on
     # libvulkan-loader at runtime. But Qt's headers additionally require <vulkan/vulkan.h> to be
     # present at *application* build time: QVulkanInstance and QRhiVulkanInitParams are declared
