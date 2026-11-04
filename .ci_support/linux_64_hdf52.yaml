@@ -1,3 +1,5 @@
+DOCKER_PLATFORM:
+- linux/amd64
 c_compiler:
 - gcc
 c_compiler_version:
@@ -29,7 +31,7 @@ libsqlite:
 libssh:
 - '0.12'
 qt6_main:
-- '6'
+- '6.11'
 target_platform:
 - linux-64
 zip_keys:
